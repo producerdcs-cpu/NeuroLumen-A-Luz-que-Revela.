@@ -1,0 +1,105 @@
+/**
+ * NeuroLumen Design Tokens
+ * Build 0.3 — Design System
+ *
+ * Uso:
+ *   <html data-theme="dark">  (padrão)
+ *   <html data-theme="light">
+ */
+
+:root,
+[data-theme="dark"] {
+  /* Background */
+  --nl-bg: #0a0a0a;
+  --nl-bg-elevated: #111113;
+  --nl-surface: #18181b;
+  --nl-surface-hover: #27272a;
+
+  /* Border */
+  --nl-border: rgba(34, 211, 238, 0.2);
+  --nl-border-strong: rgba(34, 211, 238, 0.5);
+
+  /* Primary (luz) */
+  --nl-primary: #22d3ee;
+  --nl-primary-hover: #67e8f9;
+  --nl-primary-muted: rgba(34, 211, 238, 0.15);
+
+  /* Text */
+  --nl-text: #ffffff;
+  --nl-text-secondary: #a1a1aa;
+  --nl-text-muted: #71717a;
+
+  /* Semantic — evidência */
+  --nl-success: #34d399;   /* Fato documentado */
+  --nl-info: #60a5fa;      /* Inferência */
+  --nl-warning: #fbbf24;   /* Hipótese */
+  --nl-danger: #f87171;    /* Erro */
+  --nl-creative: #c084fc;  /* Conteúdo criativo */
+
+  /* Typography */
+  --nl-font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --nl-font-mono: 'JetBrains Mono', 'Fira Code', ui-monospace, monospace;
+
+  /* Radius */
+  --nl-radius-sm: 0.375rem;
+  --nl-radius-md: 0.75rem;
+  --nl-radius-lg: 1rem;
+  --nl-radius-xl: 1.5rem;
+  --nl-radius-full: 9999px;
+
+  /* Shadow */
+  --nl-shadow-glow: 0 0 40px rgba(34, 211, 238, 0.15);
+  --nl-shadow-card: 0 4px 24px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme="light"] {
+  --nl-bg: #fafafa;
+  --nl-bg-elevated: #ffffff;
+  --nl-surface: #ffffff;
+  --nl-surface-hover: #f4f4f5;
+
+  --nl-border: rgba(8, 145, 178, 0.25);
+  --nl-border-strong: rgba(8, 145, 178, 0.45);
+
+  --nl-primary: #0891b2;
+  --nl-primary-hover: #0e7490;
+  --nl-primary-muted: rgba(8, 145, 178, 0.12);
+
+  --nl-text: #18181b;
+  --nl-text-secondary: #52525b;
+  --nl-text-muted: #a1a1aa;
+
+  --nl-shadow-glow: 0 0 40px rgba(8, 145, 178, 0.12);
+  --nl-shadow-card: 0 4px 24px rgba(0, 0, 0, 0.08);
+}
+
+/* Base tipográfica sugerida */
+body {
+  font-family: var(--nl-font-sans);
+  background-color: var(--nl-bg);
+  color: var(--nl-text);
+}
+
+/* Neon text utility */
+.nl-neon {
+  text-shadow:
+    0 0 20px rgba(34, 211, 238, 0.8),
+    0 0 40px rgba(34, 211, 238, 0.4);
+}
+
+[data-theme="light"] .nl-neon {
+  text-shadow:
+    0 0 12px rgba(8, 145, 178, 0.35),
+    0 0 24px rgba(8, 145, 178, 0.2);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

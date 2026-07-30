@@ -1,22 +1,30 @@
 # NeuroLumen Journal
 
 História do projeto, decisões importantes e aprendizados.
-Diferente do CHANGELOG (técnico), este documento conta a narrativa do desenvolvimento.
 
 ---
 
-## 2026-07-30 — Genesis e primeira luz
+## 2026-07-30 — Genesis, Skeleton e Design System
 
-- Projeto oficialmente iniciado como **NeuroLumen — A Luz que Revela a Mão Humana**.
-- Build 0.1 (Alpha Foundation) concluída: manifesto, visão, arquitetura, design system, roadmap e padrões.
-- Princípio central estabelecido: a plataforma não “lê mentes”; reconstrói processos criativos a partir de evidências observáveis.
-- Diferenciação obrigatória entre Fato / Inferência / Hipótese / Conteúdo criativo.
-- Protótipo visual anterior (HTML + Three.js) preservado em `prototypes/` apenas como referência.
-- Identidade visual oficial definida com três assets:
-  1. Logo (cérebro neural ciano)
-  2. Processamento Multimodal Universal
-  3. Architecture of the Mind
-- Build 0.2 iniciada: skeleton de monorepo + ADRs + Journal.
+### Build 0.1 — Genesis
+- Projeto oficialmente iniciado.
+- Manifesto, Visão, Arquitetura, padrões e ética definidos.
+- Princípio central: não “ler mentes”; reconstruir processos criativos a partir de evidências.
+- Diferenciação obrigatória Fato / Inferência / Hipótese / Criativo.
+
+### Build 0.2 — Architecture + Skeleton
+- Imagens oficiais de marca integradas.
+- Monorepo skeleton criado.
+- ADRs 001–004 registrados.
+- Journal iniciado.
+
+### Build 0.3 — Design System completo
+- Tokens de cor (dark + light) e semântica de evidência.
+- Tipografia, espaçamento, raios, sombras e breakpoints.
+- Componentes principais especificados (Navbar, Hero, Card, Badge, Footer).
+- Arquivo `design/tokens.css` pronto para consumo na interface.
+- Estrutura `assets/brand/` e `assets/concepts/` documentada.
+- Próximo passo natural: Build 0.4 (HTML estruturado).
 
 ---
 

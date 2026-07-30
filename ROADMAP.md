@@ -8,8 +8,8 @@
 
 ```
 Build 0.1  — Alpha Foundation (Genesis)          ✅ Concluída
-Build 0.2  — Architecture + Skeleton             🟢 Em andamento
-Build 0.3  — Design System completo
+Build 0.2  — Architecture + Skeleton             ✅ Concluída
+Build 0.3  — Design System completo              ✅ Concluída
 Build 0.4  — HTML estruturado (sem JS)
 Build 0.5  — CSS (tokens, temas, responsividade)
 Build 0.6  — JavaScript modular
@@ -24,22 +24,19 @@ Build 1.0  — Primeira publicação pública
 ## Detalhamento
 
 ### Build 0.1 — Alpha Foundation (Genesis) ✅
-Documentação completa: Manifesto, Visão, Arquitetura, Design System, Roadmap, padrões e licença.
+Documentação completa: Manifesto, Visão, Arquitetura, Design System inicial, Roadmap, padrões e licença.
 
-### Build 0.2 — Architecture + Skeleton 🟢
-- ADRs formais
-- Journal do projeto
-- Skeleton de monorepo (apps, packages, backend, ai, database…)
-- Integração das imagens oficiais de marca
+### Build 0.2 — Architecture + Skeleton ✅
+ADRs, Journal, skeleton de monorepo, imagens oficiais de marca.
 
-### Build 0.3 — Design System
-Tokens completos, componentes documentados, temas claro/escuro, organização definitiva de assets.
+### Build 0.3 — Design System completo ✅
+Tokens (cor, tipografia, espaçamento), temas claro/escuro, componentes, badges de evidência, `design/tokens.css`, estrutura de assets.
 
 ### Build 0.4 — HTML
 `index.html` extremamente organizado (Header → Hero → Cards → Timeline → Footer). Sem JavaScript.
 
 ### Build 0.5 — CSS
-`style.css`, `variables.css`, `animations.css`, `responsive.css` separados.
+Consumir `design/tokens.css`. Arquivos separados: `style.css`, `variables.css`, `animations.css`, `responsive.css`.
 
 ### Build 0.6 — JavaScript
 Módulos independentes (`main.js`, `navigation.js`, `layers.js`, etc.).
@@ -69,4 +66,4 @@ Versão pública estável na web.
 
 ---
 
-*Build 0.2 — Architecture + Skeleton*
+*Build 0.3 — Design System completo*
