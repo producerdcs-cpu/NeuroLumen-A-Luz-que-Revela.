@@ -6,7 +6,7 @@
 > Plataforma Global de Decodificação Cognitiva da Produção Humana
 
 **Estado:** 🟢 Iniciado  
-**Versão atual:** `v0.4.0` — Build 0.4 HTML estruturado  
+**Versão atual:** `v0.5.0` — Build 0.5 CSS + GitHub Pages  
 **Licença:** MIT
 
 ---
@@ -15,17 +15,30 @@
 
 O NeuroLumen **não pretende “ler mentes”**.
 
-Ele reconstrói, por meio de Inteligência Artificial, os processos criativos humanos a partir de **evidências observáveis**, classificando cada resultado como fato, inferência, hipótese ou conteúdo criativo.
+Ele reconstrói processos criativos humanos a partir de **evidências observáveis**, classificando cada resultado como fato, inferência, hipótese ou conteúdo criativo.
 
 ---
 
-## Identidade Visual Oficial
+## Ver online (GitHub Pages)
 
-| Asset | Uso |
-|-------|-----|
-| ![Logo](./neurolumen-logo-brain.png) | **Logo / Banner principal** |
-| ![Multimodal](./architecture-of-the-mind.png) | **AI Engine** — Processamento Multimodal Universal |
-| ![Architecture](./multimodal-processing-universal.png) | **Impacto Neuroscience** — Architecture of the Mind |
+1. No repositório: **Settings → Pages**
+2. **Source:** GitHub Actions
+3. Aguarde o workflow `Deploy GitHub Pages` (aba Actions)
+4. Abra:
+
+```
+https://producerdcs-cpu.github.io/NeuroLumen-A-Luz-que-Revela./
+```
+
+(O nome do repositório termina com ponto — isso entra na URL.)
+
+Cada push em `main` atualiza o site automaticamente.
+
+---
+
+## Ver localmente
+
+Abra `frontend/index.html` no navegador.
 
 ---
 
@@ -33,29 +46,19 @@ Ele reconstrói, por meio de Inteligência Artificial, os processos criativos hu
 
 | Build | Nome | Status |
 |-------|------|--------|
-| **0.1** | Alpha Foundation | ✅ |
-| **0.2** | Architecture + Skeleton | ✅ |
-| **0.3** | Design System | ✅ |
-| **0.4** | HTML estruturado | ✅ |
-| **0.5** | CSS | 📋 Próxima |
-| 0.6–1.0 | JS → React → Backend → IA → Publicação | 📋 |
-
----
-
-## Como visualizar a interface (Build 0.4)
-
-1. Clone o repositório
-2. Abra `frontend/index.html` no navegador
-
-Estilos completos chegam na **Build 0.5**.
+| 0.1 | Foundation | ✅ |
+| 0.2 | Architecture | ✅ |
+| 0.3 | Design System | ✅ |
+| 0.4 | HTML | ✅ |
+| **0.5** | **CSS + Pages** | ✅ |
+| 0.6 | JavaScript | 📋 Próxima |
+| 0.7–1.0 | React → IA → Publicação | 📋 |
 
 ---
 
 ## Documentação
 
 - [MANIFESTO.md](./MANIFESTO.md)
-- [VISION.md](./VISION.md)
-- [ARCHITECTURE.md](./ARCHITECTURE.md)
 - [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md)
 - [ROADMAP.md](./ROADMAP.md)
 - [frontend/README.md](./frontend/README.md)
@@ -63,4 +66,4 @@ Estilos completos chegam na **Build 0.5**.
 ---
 
 **NeuroLumen** — A Luz que Revela a Mão Humana.  
-*Build 0.4 — HTML estruturado*
+*Build 0.5 — CSS + GitHub Pages*

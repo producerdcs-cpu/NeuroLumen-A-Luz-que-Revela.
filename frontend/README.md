@@ -2,26 +2,38 @@
 
 Interface do NeuroLumen.
 
-## Build 0.4 — HTML estruturado
+## Builds
 
-| Arquivo | Descrição |
-|---------|-----------|
-| `index.html` | Página única semântica, sem JavaScript |
+| Build | Conteúdo |
+|-------|----------|
+| **0.4** | HTML semântico sem JavaScript |
+| **0.5** | CSS completo + GitHub Pages |
 
-### Estrutura da página
+## Arquivos
 
 ```
-Header (nav)
-Hero
-Visão (5 pilares)
-Experiência (placeholder da luz interativa)
-Evidências (classificação Fato / Inferência / Hipótese / Criativo)
-Galeria / Revelações
-Footer
+frontend/
+├── index.html
+├── css/
+│   ├── variables.css
+│   ├── style.css
+│   ├── animations.css
+│   └── responsive.css
+└── README.md
 ```
 
-### Como visualizar
+## Visualizar localmente
 
 Abra `frontend/index.html` no navegador.
 
-Na **Build 0.5** serão adicionados os arquivos CSS que consomem `design/tokens.css`.
+## Visualizar online (GitHub Pages)
+
+Após ativar Pages (Settings → Pages → Source: GitHub Actions), o site fica em:
+
+```
+https://producerdcs-cpu.github.io/NeuroLumen-A-Luz-que-Revela./
+```
+
+(O ponto no nome do repositório faz parte da URL.)
+
+O workflow `.github/workflows/pages.yml` publica a pasta `frontend/` a cada push em `main`.

@@ -1,0 +1,56 @@
+/**
+ * NeuroLumen — animations.css
+ * Build 0.5
+ */
+
+@keyframes nl-fade-up {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes nl-pulse-glow {
+  0%, 100% {
+    box-shadow: 0 0 24px rgba(34, 211, 238, 0.12);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(34, 211, 238, 0.22);
+  }
+}
+
+.hero-inner {
+  animation: nl-fade-up 0.7s ease-out both;
+}
+
+.experience-frame {
+  animation: nl-pulse-glow 4s ease-in-out infinite;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .hero-inner,
+  .experience-frame {
+    animation: none;
+  }
+
+  .card:hover,
+  .btn:hover {
+    transform: none;
+  }
+}

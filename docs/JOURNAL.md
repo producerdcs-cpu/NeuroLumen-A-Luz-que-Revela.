@@ -2,16 +2,11 @@
 
 ---
 
-## 2026-07-30 — Da fundação ao primeiro HTML
+## 2026-07-30 — Interface no ar
 
-### Builds 0.1–0.3
-Fundação documental, skeleton de monorepo e Design System completo (tokens, temas, componentes).
+### Build 0.5
+- CSS completo alinhado ao Design System (tokens, layout, badges, responsivo).
+- Workflow de GitHub Pages: a pasta `frontend/` é publicada a cada push em `main`.
+- A partir daqui, cada Build pode ser apreciada online após ativar Pages (Source: GitHub Actions).
 
-### Build 0.4 — HTML estruturado
-- Primeiro arquivo de interface de produção: `frontend/index.html`
-- Semântica completa e navegação por âncoras
-- Seções alinhadas aos pilares e à classificação de evidências
-- Zero JavaScript (disciplina do plano de Builds)
-- Próximo: Build 0.5 — CSS consumindo os tokens oficiais
-
----
+Próximo: Build 0.6 — JavaScript modular.

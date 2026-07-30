@@ -1,0 +1,59 @@
+/**
+ * NeuroLumen — responsive.css
+ * Build 0.5
+ */
+
+@media (max-width: 767px) {
+  .nav-links {
+    display: none; /* menu completo na 0.6 com JS; links acessíveis via âncoras no conteúdo */
+  }
+
+  .hero {
+    padding-top: calc(var(--nl-header-h) + 2rem);
+  }
+
+  .section {
+    padding: 3.5rem 0;
+  }
+}
+
+@media (min-width: 640px) {
+  .pillars-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .evidence-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .pillars-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .pillars-grid .pillar-card:nth-child(4),
+  .pillars-grid .pillar-card:nth-child(5) {
+    grid-column: span 1;
+  }
+}
+
+@media (min-width: 1024px) {
+  .nav-links {
+    display: flex;
+  }
+
+  .evidence-grid,
+  .gallery-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .pillars-grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+
+  .experience-frame {
+    min-height: 22rem;
+  }
+}
