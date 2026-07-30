@@ -1,31 +1,17 @@
 # NeuroLumen Journal
 
-História do projeto, decisões importantes e aprendizados.
-
 ---
 
-## 2026-07-30 — Genesis, Skeleton e Design System
+## 2026-07-30 — Da fundação ao primeiro HTML
 
-### Build 0.1 — Genesis
-- Projeto oficialmente iniciado.
-- Manifesto, Visão, Arquitetura, padrões e ética definidos.
-- Princípio central: não “ler mentes”; reconstruir processos criativos a partir de evidências.
-- Diferenciação obrigatória Fato / Inferência / Hipótese / Criativo.
+### Builds 0.1–0.3
+Fundação documental, skeleton de monorepo e Design System completo (tokens, temas, componentes).
 
-### Build 0.2 — Architecture + Skeleton
-- Imagens oficiais de marca integradas.
-- Monorepo skeleton criado.
-- ADRs 001–004 registrados.
-- Journal iniciado.
-
-### Build 0.3 — Design System completo
-- Tokens de cor (dark + light) e semântica de evidência.
-- Tipografia, espaçamento, raios, sombras e breakpoints.
-- Componentes principais especificados (Navbar, Hero, Card, Badge, Footer).
-- Arquivo `design/tokens.css` pronto para consumo na interface.
-- Estrutura `assets/brand/` e `assets/concepts/` documentada.
-- Próximo passo natural: Build 0.4 (HTML estruturado).
+### Build 0.4 — HTML estruturado
+- Primeiro arquivo de interface de produção: `frontend/index.html`
+- Semântica completa e navegação por âncoras
+- Seções alinhadas aos pilares e à classificação de evidências
+- Zero JavaScript (disciplina do plano de Builds)
+- Próximo: Build 0.5 — CSS consumindo os tokens oficiais
 
 ---
-
-*Próximas entradas serão adicionadas a cada Build significativa.*

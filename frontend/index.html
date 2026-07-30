@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NeuroLumen — A Luz que Revela a Mão Humana. Plataforma de decodificação cognitiva da produção humana.">
+  <meta name="theme-color" content="#0a0a0a">
+  <title>NeuroLumen — A Luz que Revela</title>
+
+  <!-- Build 0.5: tokens e estilos -->
+  <!-- <link rel="stylesheet" href="../design/tokens.css"> -->
+  <!-- <link rel="stylesheet" href="css/variables.css"> -->
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <!-- <link rel="stylesheet" href="css/animations.css"> -->
+  <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+
+  <!-- Estilos mínimos apenas para legibilidade até a Build 0.5 -->
+  <style>
+    :root {
+      --nl-bg: #0a0a0a;
+      --nl-surface: #18181b;
+      --nl-border: rgba(34, 211, 238, 0.2);
+      --nl-primary: #22d3ee;
+      --nl-text: #ffffff;
+      --nl-text-secondary: #a1a1aa;
+      --nl-text-muted: #71717a;
+      --nl-success: #34d399;
+      --nl-info: #60a5fa;
+      --nl-warning: #fbbf24;
+      --nl-creative: #c084fc;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Inter, system-ui, -apple-system, sans-serif;
+      background: var(--nl-bg);
+      color: var(--nl-text);
+      line-height: 1.5;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { color: var(--nl-primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .container { width: min(1120px, 92%); margin-inline: auto; }
+    .nl-neon {
+      text-shadow: 0 0 20px rgba(34, 211, 238, 0.8), 0 0 40px rgba(34, 211, 238, 0.4);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== HEADER / NAV ========== -->
+  <header class="site-header">
+    <nav class="nav container" aria-label="Navegação principal">
+      <a class="nav-brand" href="#home" aria-label="NeuroLumen — início">
+        <span class="nav-mark" aria-hidden="true">NL</span>
+        <span class="nav-title">NEUROLUMEN</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Início</a></li>
+        <li><a href="#visao">A Visão</a></li>
+        <li><a href="#experiencia">Experiência</a></li>
+        <li><a href="#evidencias">Evidências</a></li>
+        <li><a href="#galeria">Revelações</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section id="home" class="hero" aria-labelledby="hero-title">
+      <div class="container hero-inner">
+        <p class="hero-eyebrow">A Luz que Revela a Mão Humana</p>
+        <h1 id="hero-title" class="hero-title nl-neon">
+          A LUZ<br>QUE REVELA
+        </h1>
+        <p class="hero-lead">
+          Plataforma de decodificação cognitiva da produção humana.
+          Reconstruímos processos criativos a partir de evidências observáveis —
+          nunca afirmamos “o que alguém pensava”.
+        </p>
+        <p class="hero-actions">
+          <a class="btn btn-primary" href="#experiencia">Entrar na Luz</a>
+          <a class="btn btn-ghost" href="#visao">Conhecer a visão</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ========== VISÃO / PILARES ========== -->
+    <section id="visao" class="section section-visao" aria-labelledby="visao-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="visao-title" class="section-title nl-neon">O Que é NeuroLumen?</h2>
+          <p class="section-lead">
+            Cinco pilares para revelar como a inteligência humana deixa rastros
+            em tudo o que cria.
+          </p>
+        </header>
+
+        <div class="pillars-grid">
+          <article class="card pillar-card">
+            <h3 class="card-title">1. Arte</h3>
+            <p class="card-text">
+              Análise de pinturas, esculturas, arquitetura, manuscritos e desenhos —
+              camadas, geometria, pigmentos e restauração digital.
+            </p>
+          </article>
+
+          <article class="card pillar-card">
+            <h3 class="card-title">2. BioData</h3>
+            <p class="card-text">
+              Mapa histórico de indivíduos: cronologia, influências, obras,
+              correspondências, colaborações e contexto social.
+            </p>
+          </article>
+
+          <article class="card pillar-card">
+            <h3 class="card-title">3. Cognição</h3>
+            <p class="card-text">
+              Motor inspirado em memória, atenção, associação e criatividade —
+              sempre como hipóteses explicáveis, nunca como leitura de mentes.
+            </p>
+          </article>
+
+          <article class="card pillar-card">
+            <h3 class="card-title">4. Knowledge Graph</h3>
+            <p class="card-text">
+              Todo conhecimento conectado: de Leonardo à óptica, da anatomia
+              à engenharia, do Renascimento a outros pesquisadores.
+            </p>
+          </article>
+
+          <article class="card pillar-card">
+            <h3 class="card-title">5. Luz Reveladora</h3>
+            <p class="card-text">
+              O algoritmo atravessa imagem, texto, voz e contexto histórico,
+              indicando o grau de evidência de cada descoberta.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EXPERIÊNCIA ========== -->
+    <section id="experiencia" class="section section-experiencia" aria-labelledby="experiencia-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="experiencia-title" class="section-title nl-neon">Interaja com a Luz</h2>
+          <p class="section-lead">
+            Espaço reservado para a experiência visual interativa
+            (partículas, camadas e rede neural luminosa).
+            Será ativado nas Builds de CSS e JavaScript.
+          </p>
+        </header>
+
+        <div class="experience-frame" role="img" aria-label="Área reservada para visualização 3D da rede neural luminosa">
+          <p class="experience-placeholder">
+            Visualização da Luz — em construção
+          </p>
+          <p class="experience-note">
+            Build 0.5 (CSS) · Build 0.6 (interação)
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EVIDÊNCIAS ========== -->
+    <section id="evidencias" class="section section-evidencias" aria-labelledby="evidencias-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="evidencias-title" class="section-title nl-neon">Classificação de Evidências</h2>
+          <p class="section-lead">
+            Toda saída da plataforma é classificada com transparência.
+            Nenhuma hipótese é apresentada como fato.
+          </p>
+        </header>
+
+        <div class="evidence-grid">
+          <article class="card evidence-card evidence-fato">
+            <p class="evidence-badge">Fato documentado</p>
+            <h3 class="card-title">Fontes verificáveis</h3>
+            <p class="card-text">
+              Baseado em documentos históricos, consenso acadêmico e
+              evidências materiais comprovadas.
+            </p>
+          </article>
+
+          <article class="card evidence-card evidence-inferencia">
+            <p class="evidence-badge">Inferência</p>
+            <h3 class="card-title">Modelos + evidências</h3>
+            <p class="card-text">
+              Derivada de padrões observáveis e modelos computacionais,
+              com grau de confiança indicado.
+            </p>
+          </article>
+
+          <article class="card evidence-card evidence-hipotese">
+            <p class="evidence-badge">Hipótese exploratória</p>
+            <h3 class="card-title">Baixa ou média confiança</h3>
+            <p class="card-text">
+              Interpretação possível, sempre acompanhada de limitações
+              e fontes utilizadas.
+            </p>
+          </article>
+
+          <article class="card evidence-card evidence-criativo">
+            <p class="evidence-badge">Conteúdo criativo</p>
+            <h3 class="card-title">Simulação / narrativa</h3>
+            <p class="card-text">
+              Produzido por IA para exploração ou educação —
+              explicitamente marcado como não factual.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== GALERIA / REVELAÇÕES ========== -->
+    <section id="galeria" class="section section-galeria" aria-labelledby="galeria-title">
+      <div class="container">
+        <header class="section-header">
+          <h2 id="galeria-title" class="section-title nl-neon">Revelações</h2>
+          <p class="section-lead">
+            Foco inicial (Alpha): Santa Ceia, Mona Lisa, Códices e escrita espelhada.
+            Cada item será enriquecido com camadas de evidência nas próximas Builds.
+          </p>
+        </header>
+
+        <div class="gallery-grid">
+          <article class="card gallery-card">
+            <h3 class="card-title">A Santa Ceia</h3>
+            <p class="card-text">Leonardo da Vinci · 1495–1498</p>
+            <p class="evidence-badge evidence-fato">Fato documentado</p>
+          </article>
+
+          <article class="card gallery-card">
+            <h3 class="card-title">Mona Lisa</h3>
+            <p class="card-text">Leonardo da Vinci · c. 1503–1506</p>
+            <p class="evidence-badge evidence-fato">Fato documentado</p>
+          </article>
+
+          <article class="card gallery-card">
+            <h3 class="card-title">Códices</h3>
+            <p class="card-text">Manuscritos e estudos · anatomia, voo, engenharia</p>
+            <p class="evidence-badge evidence-inferencia">Inferência</p>
+          </article>
+
+          <article class="card gallery-card">
+            <h3 class="card-title">Escrita espelhada</h3>
+            <p class="card-text">Padrão gráfico e hipóteses de uso</p>
+            <p class="evidence-badge evidence-hipotese">Hipótese exploratória</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>
+        &copy; 2026 NeuroLumen — A Luz que Revela a Mão Humana.
+        Todos os direitos reservados.
+      </p>
+      <p class="footer-meta">
+        Build 0.4 — HTML estruturado ·
+        <a href="https://github.com/producerdcs-cpu/NeuroLumen-A-Luz-que-Revela.">GitHub</a>
+      </p>
+    </div>
+  </footer>
+
+  <!--
+    Build 0.4: nenhum JavaScript.
+    Build 0.6: main.js, navigation.js, layers.js, animation.js, etc.
+  -->
+</body>
+</html>
