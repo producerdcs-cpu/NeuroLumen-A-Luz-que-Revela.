@@ -46,8 +46,10 @@ Cada obra torna-se uma janela para compreender:
 | Asset | Uso |
 |-------|-----|
 | ![Logo](./neurolumen-logo-brain.png) | **Logo / Banner principal** — identidade de marca |
-| ![Multimodal](./multimodal-processing-universal.png) | **AI Engine** — Processamento Multimodal Universal (50+ formatos) |
-| ![Architecture](./architecture-of-the-mind.png) | **Impacto Neuroscience** — Architecture of the Mind |
+| ![Multimodal](./architecture-of-the-mind.png) | **AI Engine** — Processamento Multimodal Universal (50+ formatos) |
+| ![Architecture](./multimodal-processing-universal.png) | **Impacto Neuroscience** — Architecture of the Mind |
+
+> Nota: na Build 0.3 os arquivos serão renomeados e organizados em `assets/brand/` e `assets/concepts/` para alinhar nome do arquivo ao conteúdo visual.
 
 ---
 
@@ -92,8 +94,8 @@ O NeuroLumen adota **IA Explicável** e diferencia claramente:
 | Build | Nome | Status |
 |-------|------|--------|
 | **0.1** | Alpha Foundation (Genesis) | ✅ Concluída |
-| **0.2** | Architecture + Skeleton | 🟢 Em andamento |
-| 0.3 | Design System | 📋 Próxima |
+| **0.2** | Architecture + Skeleton | ✅ Concluída |
+| **0.3** | Design System | 📋 Próxima |
 | 0.4–1.0 | HTML → React → Backend → IA → Publicação | 📋 Planejado |
 
 Veja o [ROADMAP.md](./ROADMAP.md) completo.
@@ -123,8 +125,8 @@ NeuroLumen/
 │   ├── JOURNAL.md
 │   └── adr/
 ├── prototypes/
-├── apps/                    # (skeleton Build 0.2)
-├── packages/                # (skeleton Build 0.2)
+├── apps/
+├── packages/
 ├── backend/
 ├── mobile/
 ├── ai/
