@@ -1,6 +1,6 @@
 # Arquitetura NeuroLumen
 
-**Documento de arquitetura geral — Build 0.1**
+**Documento de arquitetura geral — Build 0.2**
 
 ---
 
@@ -15,7 +15,7 @@ CAMADA III — Inteligência      (IA multimodal + BioData + Graph)
 CAMADA IV  — Plataforma        (web, mobile, APIs, infra, deploy)
 ```
 
-Nenhuma camada inferior deve depender de detalhes de implementação de camadas superiores.
+![Processamento Multimodal Universal](./multimodal-processing-universal.png)
 
 ---
 
@@ -42,6 +42,8 @@ Cada hipótese gerada carrega obrigatoriamente:
 - evidências
 - limitações conhecidas
 
+**Capacidade multimodal:** 50+ formatos (texto, áudio, vídeo, imagens, código, IoT, biométrico, estruturado) — herdada e expandida a partir da visão do NeuroLeitor.
+
 ---
 
 ## 3. Módulos Principais
@@ -50,10 +52,10 @@ Cada hipótese gerada carrega obrigatoriamente:
 |--------|------------------|
 | **Neural Art Decoder** | Segmentação, reconstrução, comparação histórica, análise de estilo, visualização em camadas |
 | **Historical Mind Explorer** | Simulador baseado em evidências (nunca personificação direta) |
-| **BioData Collective** | Biblioteca viva de perfis históricos e contemporâneos (com consentimento) |
+| **BioData Collective** | Biblioteca viva de perfis históricos e contemporâneos |
 | **Neural Voice Explorer** | Análise de prosódia, ritmo, estrutura linguística |
-| **Manuscript Decoder** | OCR manuscrito, escrita espelhada, paleografia, reconstrução |
-| **Universe Graph** | Visualização 3D de conexões entre arte, ciência, história, matemática, filosofia etc. |
+| **Manuscript Decoder** | OCR manuscrito, escrita espelhada, paleografia |
+| **Universe Graph** | Visualização 3D de conexões entre disciplinas e eras |
 
 ---
 
@@ -73,22 +75,19 @@ Cada hipótese gerada carrega obrigatoriamente:
 - PyTorch / ONNX
 - OpenCV, DINOv2, Segment Anything, CLIP
 - RAG + LLM multimodal
-- NVIDIA Triton + Ray (serving e orquestração)
+- NVIDIA Triton + Ray
 
 ### Banco de Dados
-- PostgreSQL (relacional)
-- Neo4j (Knowledge Graph)
-- Milvus (vetores)
-- MinIO (objetos)
+- PostgreSQL · Neo4j · Milvus · MinIO
 
 ### Infraestrutura
 - Docker + Kubernetes
 - GitHub Actions
-- Vercel (frontend) + Railway / cloud (backend)
+- Vercel + Railway / cloud
 
 ---
 
-## 5. Estrutura de Monorepositório (alvo a partir da Build 0.2)
+## 5. Estrutura de Monorepositório (skeleton Build 0.2)
 
 ```
 NeuroLumen/
@@ -105,6 +104,7 @@ NeuroLumen/
 │   └── shared/
 ├── backend/
 ├── docs/
+│   └── adr/
 ├── docker/
 ├── scripts/
 └── .github/
@@ -112,27 +112,26 @@ NeuroLumen/
 
 ---
 
-## 6. Princípios Arquiteturais
+## 6. Architecture Decision Records
 
-1. **Modularidade** — cada pacote e módulo independente
-2. **Transparência** — classificação obrigatória de fatos / inferências / hipóteses / criativo
-3. **Escalabilidade** — crescimento horizontal sem reescrita da base
-4. **Explicabilidade** — toda saída de IA acompanhada de evidências e limitações
-5. **Preservação Cultural** — respeito ao contexto histórico
+As decisões importantes ficam em `docs/adr/`.
 
----
-
-## 7. Architecture Decision Records (ADRs)
-
-As decisões importantes serão registradas em `docs/adr/` a partir da Build 0.2.
-
-Exemplos de decisões já tomadas na 0.1:
-
-- Documentação antes de qualquer código de aplicação
-- Monorepo como estratégia de longo prazo
-- Diferenciação obrigatória entre tipos de evidência
-- Não personificação de figuras históricas
+ADRs da Build 0.2:
+- ADR-001 — Documentação antes de código de aplicação
+- ADR-002 — Monorepo como estratégia de longo prazo
+- ADR-003 — Diferenciação obrigatória de tipos de evidência
+- ADR-004 — Não personificação de figuras históricas
 
 ---
 
-*Documento oficial da Build 0.1 — Genesis*
+## 7. Princípios Arquiteturais
+
+1. **Modularidade**
+2. **Transparência**
+3. **Escalabilidade**
+4. **Explicabilidade**
+5. **Preservação Cultural**
+
+---
+
+*Build 0.2 — Architecture + Skeleton*

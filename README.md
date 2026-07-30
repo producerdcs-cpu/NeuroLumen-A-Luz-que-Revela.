@@ -1,13 +1,13 @@
 # NeuroLumen
 **A Luz que Revela a Mão Humana**
 
-![NeuroLumen](https://via.placeholder.com/1200x400/0a0a0a/00ffcc?text=NeuroLumen+%E2%80%94+A+Luz+que+Revela)
+![NeuroLumen](./neurolumen-logo-brain.png)
 
 > Plataforma Global de Decodificação Cognitiva da Produção Humana
 
 **Estado:** 🟢 Iniciado  
-**Versão atual:** `v0.1.0` — Build 0.1 Alpha Foundation (Genesis)  
-**Licença:** MIT (provisória)
+**Versão atual:** `v0.2.0` — Build 0.2 Architecture + Skeleton  
+**Licença:** MIT
 
 ---
 
@@ -41,30 +41,38 @@ Cada obra torna-se uma janela para compreender:
 
 ---
 
+## Identidade Visual Oficial
+
+| Asset | Uso |
+|-------|-----|
+| ![Logo](./neurolumen-logo-brain.png) | **Logo / Banner principal** — identidade de marca |
+| ![Multimodal](./multimodal-processing-universal.png) | **AI Engine** — Processamento Multimodal Universal (50+ formatos) |
+| ![Architecture](./architecture-of-the-mind.png) | **Impacto Neuroscience** — Architecture of the Mind |
+
+---
+
 ## Os Cinco Pilares
 
 | Pilar | Descrição |
 |-------|-----------|
-| **1. Arte** | Análise de pinturas, esculturas, arquitetura, manuscritos e desenhos (camadas espectrais, geometria, pigmentos, restauração digital) |
-| **2. BioData** | “Mapa Histórico” de indivíduos — cronologia, influências, obras, correspondências, colaborações e contexto social |
+| **1. Arte** | Análise de pinturas, esculturas, arquitetura, manuscritos e desenhos |
+| **2. BioData** | “Mapa Histórico” de indivíduos — cronologia, influências, obras, contexto |
 | **3. Cognição** | Motor inspirado em memória, atenção, associação e criatividade — sempre como hipóteses explicáveis |
-| **4. Knowledge Graph** | Todo conhecimento conectado (Leonardo → Anatomia → Engenharia → Pintura → Geometria → Óptica → Ciência → Renascimento) |
-| **5. Luz Reveladora** | O algoritmo que atravessa imagem, texto, voz, biografia e contexto histórico, indicando o grau de evidência de cada descoberta |
+| **4. Knowledge Graph** | Todo conhecimento conectado |
+| **5. Luz Reveladora** | O algoritmo que atravessa imagem, texto, voz e contexto, indicando o grau de evidência |
 
 ---
 
 ## Diferencial Científico
 
-O NeuroLumen adota **IA Explicável (Explainable AI)** e diferencia claramente:
+O NeuroLumen adota **IA Explicável** e diferencia claramente:
 
 | Tipo | Descrição |
 |------|-----------|
-| **Fatos documentados** | Baseados em fontes históricas verificáveis |
+| **Fatos documentados** | Fontes históricas verificáveis |
 | **Inferências** | Derivadas de modelos e evidências |
 | **Hipóteses exploratórias** | Interpretações de baixa ou média confiança |
 | **Conteúdo criativo** | Simulações e narrativas produzidas por IA |
-
-Essa transparência torna a plataforma adequada para pesquisadores, museus, universidades e instituições culturais.
 
 ---
 
@@ -72,35 +80,27 @@ Essa transparência torna a plataforma adequada para pesquisadores, museus, univ
 
 | Camada | Nome | Objetivo |
 |--------|------|----------|
-| **I** | Fundação | Arquitetura, manifesto, visão, roadmap, design system — **zero código de aplicação** |
-| **II** | Interface | HTML → CSS → Design Tokens → componentes → protótipo navegável |
-| **III** | Inteligência | Engine multimodal, BioData, Knowledge Graph, visão, OCR, voz, RAG, explicabilidade |
-| **IV** | Plataforma | Web, PWA, Mobile, APIs, banco, Docker, deploy, escalabilidade |
+| **I** | Fundação | Documentação, manifesto, visão, arquitetura |
+| **II** | Interface | HTML → CSS → Design Tokens → protótipo |
+| **III** | Inteligência | Engine multimodal, BioData, Knowledge Graph, RAG |
+| **IV** | Plataforma | Web, PWA, Mobile, APIs, deploy |
 
 ---
 
-## Status da Build 0.1
+## Status das Builds
 
-**Codinome:** Genesis  
-**Missão:** Construir uma fundação tão sólida que todas as futuras versões possam crescer sobre ela sem necessidade de reestruturação.
+| Build | Nome | Status |
+|-------|------|--------|
+| **0.1** | Alpha Foundation (Genesis) | ✅ Concluída |
+| **0.2** | Architecture + Skeleton | 🟢 Em andamento |
+| 0.3 | Design System | 📋 Próxima |
+| 0.4–1.0 | HTML → React → Backend → IA → Publicação | 📋 Planejado |
 
-### Documentação entregue
-
-- [x] `README.md` — Cartão de visitas do projeto
-- [x] `MANIFESTO.md` — Filosofia, ética e limites
-- [x] `VISION.md` — Visão de longo prazo
-- [x] `ARCHITECTURE.md` — Arquitetura geral
-- [x] `DESIGN_SYSTEM.md` — Identidade visual
-- [x] `ROADMAP.md` — Cronograma oficial de Builds
-- [x] `CHANGELOG.md` — Registro de alterações
-- [x] `CONTRIBUTING.md` — Guia de contribuição
-- [x] `CODE_STYLE.md` — Padrões de código
-- [x] `LICENSE` — Licença MIT
-- [x] `.gitignore`
+Veja o [ROADMAP.md](./ROADMAP.md) completo.
 
 ---
 
-## Estrutura do Repositório (atual e futura)
+## Estrutura do Repositório
 
 ```
 NeuroLumen/
@@ -115,37 +115,24 @@ NeuroLumen/
 ├── CODE_STYLE.md
 ├── LICENSE
 ├── .gitignore
-├── docs/                  # Documentação expandida + ADRs
-├── prototypes/            # Protótipos visuais anteriores (referência)
-├── frontend/              # (Build 0.4+)
-├── backend/               # (Build 0.8+)
-├── mobile/                # (Build futura)
-├── ai/                    # (Build 0.9+)
-├── database/              # (Build futura)
+├── neurolumen-logo-brain.png
+├── multimodal-processing-universal.png
+├── architecture-of-the-mind.png
+├── docs/
+│   ├── README.md
+│   ├── JOURNAL.md
+│   └── adr/
+├── prototypes/
+├── apps/                    # (skeleton Build 0.2)
+├── packages/                # (skeleton Build 0.2)
+├── backend/
+├── mobile/
+├── ai/
+├── database/
 ├── assets/
 ├── scripts/
-├── docker/
-└── .github/
+└── docker/
 ```
-
----
-
-## Roadmap resumido
-
-```
-Build 0.1  Fundação (documentação)          ← você está aqui
-Build 0.2  Arquitetura detalhada + skeleton
-Build 0.3  Design System completo
-Build 0.4  HTML estruturado
-Build 0.5  CSS (tokens + temas)
-Build 0.6  JavaScript modular
-Build 0.7  React / Next.js
-Build 0.8  Backend
-Build 0.9  IA + BioData
-Build 1.0  Primeira publicação pública
-```
-
-Veja o [ROADMAP.md](./ROADMAP.md) completo.
 
 ---
 
@@ -159,9 +146,15 @@ Veja o [ROADMAP.md](./ROADMAP.md) completo.
 
 ---
 
-## Como contribuir
+## Documentação fundamental
 
-Leia o [CONTRIBUTING.md](./CONTRIBUTING.md).
+- [MANIFESTO.md](./MANIFESTO.md) — filosofia e ética
+- [VISION.md](./VISION.md) — horizontes 2026–2030+
+- [ARCHITECTURE.md](./ARCHITECTURE.md) — camadas, módulos e stack
+- [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md) — identidade visual
+- [ROADMAP.md](./ROADMAP.md) — Builds oficiais
+- [CONTRIBUTING.md](./CONTRIBUTING.md) — como contribuir
+- [CODE_STYLE.md](./CODE_STYLE.md) — padrões de código
 
 ---
 
@@ -172,6 +165,4 @@ MIT License — veja [LICENSE](./LICENSE).
 ---
 
 **NeuroLumen** — A Luz que Revela a Mão Humana.  
-Feito com rigor científico e respeito à criatividade humana.  
-
-*Build 0.1 — Genesis*
+*Build 0.2 — Architecture + Skeleton*

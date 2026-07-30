@@ -6,26 +6,37 @@ O formato é baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.0.
 
 ---
 
+## [0.2.0] — 2026-07-30
+
+### Added
+- Imagens oficiais de marca na raiz:
+  - `neurolumen-logo-brain.png`
+  - `multimodal-processing-universal.png`
+  - `architecture-of-the-mind.png`
+- Integração das imagens no `README.md`, `DESIGN_SYSTEM.md` e `ARCHITECTURE.md`
+- Skeleton de monorepo (`apps/`, `packages/`, `backend/`, etc.)
+- `docs/JOURNAL.md` — história do projeto
+- `docs/adr/` — Architecture Decision Records iniciais (ADR-001 a ADR-004)
+- READMEs de cada pasta do skeleton
+
+### Changed
+- Versão do projeto avançada para Build 0.2
+- README atualizado com identidade visual oficial
+
+---
+
 ## [0.1.0] — 2026-07-30
 
 ### Added
 - Documentação completa da **Build 0.1 — Alpha Foundation (Genesis)**
-- `README.md` — apresentação oficial do projeto
-- `MANIFESTO.md` — filosofia, ética, limites e diferenciação de evidências
-- `VISION.md` — visão de longo prazo (2026 → 2030+)
-- `ARCHITECTURE.md` — arquitetura geral, camadas, módulos e stack
-- `DESIGN_SYSTEM.md` — identidade visual inicial e tokens de referência
-- `ROADMAP.md` — cronograma oficial de Builds
-- `CONTRIBUTING.md` — guia de contribuição
-- `CODE_STYLE.md` — padrões de código
-- `LICENSE` — MIT License
-- `.gitignore` — regras iniciais
-- Estrutura de diretórios documentada (docs, prototypes, frontend, backend, etc.)
+- `README.md`, `MANIFESTO.md`, `VISION.md`, `ARCHITECTURE.md`
+- `DESIGN_SYSTEM.md`, `ROADMAP.md`, `CHANGELOG.md`
+- `CONTRIBUTING.md`, `CODE_STYLE.md`, `LICENSE`, `.gitignore`
+- Estrutura `docs/` e `prototypes/`
 
 ### Notes
-- Nenhuma linha de código de aplicação foi escrita nesta Build (conforme princípio “documentação primeiro”).
-- Protótipos visuais anteriores foram preservados como referência em `prototypes/` (quando aplicável).
-- Frase anteriormente atribuída a Leonardo da Vinci foi explicitamente marcada como não comprovada e tratada apenas como conceito narrativo/hipótese.
+- Nenhuma linha de código de aplicação foi escrita na Build 0.1
+- Frase anteriormente atribuída a Leonardo da Vinci marcada como não comprovada
 
 ---
 
