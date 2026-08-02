@@ -5,8 +5,8 @@
 
 > Plataforma Global de Decodificação Cognitiva da Produção Humana
 
-**Estado:** 🟢 Iniciado  
-**Versão atual:** `v0.5.0` — Build 0.5 CSS + GitHub Pages  
+**Estado:** 🟢 Build 0.6 online  
+**Versão atual:** `v0.6.0` — JS modular + menu mobile  
 **Licença:** MIT
 
 ---
@@ -21,18 +21,14 @@ Ele reconstrói processos criativos humanos a partir de **evidências observáve
 
 ## Ver online (GitHub Pages)
 
-1. No repositório: **Settings → Pages**
-2. **Source:** GitHub Actions
-3. Aguarde o workflow `Deploy GitHub Pages` (aba Actions)
-4. Abra:
-
 ```
 https://producerdcs-cpu.github.io/NeuroLumen-A-Luz-que-Revela./
+https://producerdcs-cpu.github.io/NeuroLumen-A-Luz-que-Revela./index.html
 ```
 
 (O nome do repositório termina com ponto — isso entra na URL.)
 
-Cada push em `main` atualiza o site automaticamente.
+Cada push em `main` atualiza o site automaticamente (Actions → Deploy GitHub Pages).
 
 ---
 
@@ -50,8 +46,8 @@ Abra `frontend/index.html` no navegador.
 | 0.2 | Architecture | ✅ |
 | 0.3 | Design System | ✅ |
 | 0.4 | HTML | ✅ |
-| **0.5** | **CSS + Pages** | ✅ |
-| 0.6 | JavaScript | 📋 Próxima |
+| 0.5 | CSS + Pages | ✅ |
+| **0.6** | **JS modular + menu mobile** | ✅ |
 | 0.7–1.0 | React → IA → Publicação | 📋 |
 
 ---
@@ -66,4 +62,4 @@ Abra `frontend/index.html` no navegador.
 ---
 
 **NeuroLumen** — A Luz que Revela a Mão Humana.  
-*Build 0.5 — CSS + GitHub Pages*
+*Build 0.6 — JS modular + menu mobile*

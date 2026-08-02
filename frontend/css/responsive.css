@@ -1,19 +1,66 @@
 /**
  * NeuroLumen — responsive.css
- * Build 0.5
+ * Build 0.6 — menu mobile
  */
 
-@media (max-width: 767px) {
-  .nav-links {
-    display: none; /* menu completo na 0.6 com JS; links acessíveis via âncoras no conteúdo */
+@media (max-width: 1023px) {
+  .nav-toggle {
+    display: flex;
   }
 
+  .nav-links {
+    display: none;
+    position: fixed;
+    top: calc(var(--nl-header-h) + env(safe-area-inset-top, 0px));
+    left: 0;
+    right: 0;
+    bottom: 0;
+    flex-direction: column;
+    gap: 0;
+    padding: 1rem 1.25rem 2rem;
+    background: rgba(10, 10, 10, 0.97);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border-top: 1px solid var(--nl-border);
+    overflow-y: auto;
+    z-index: 40;
+  }
+
+  [data-theme="light"] .nav-links {
+    background: rgba(250, 250, 250, 0.98);
+  }
+
+  .nav-links.is-open {
+    display: flex;
+  }
+
+  .nav-links li {
+    border-bottom: 1px solid var(--nl-border);
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem 0.25rem;
+    font-size: 1.05rem;
+    color: var(--nl-text);
+  }
+
+  .nav-links a.is-active {
+    color: var(--nl-primary);
+  }
+}
+
+@media (max-width: 767px) {
   .hero {
     padding-top: calc(var(--nl-header-h) + 2rem);
   }
 
   .section {
     padding: 3.5rem 0;
+  }
+
+  .nav-title {
+    font-size: 1rem;
   }
 }
 
@@ -32,16 +79,32 @@
   .pillars-grid {
     grid-template-columns: repeat(3, 1fr);
   }
-
-  .pillars-grid .pillar-card:nth-child(4),
-  .pillars-grid .pillar-card:nth-child(5) {
-    grid-column: span 1;
-  }
 }
 
 @media (min-width: 1024px) {
+  .nav-toggle {
+    display: none;
+  }
+
   .nav-links {
-    display: flex;
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    gap: 1.75rem;
+    padding: 0;
+    background: transparent;
+    border: none;
+    overflow: visible;
+  }
+
+  .nav-links li {
+    border: none;
+  }
+
+  .nav-links a {
+    display: inline;
+    padding: 0;
+    font-size: 0.875rem;
   }
 
   .evidence-grid,

@@ -24,7 +24,20 @@
         <span class="nav-mark" aria-hidden="true">NL</span>
         <span class="nav-title nl-neon">NEUROLUMEN</span>
       </a>
-      <ul class="nav-links">
+
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Abrir menu"
+      >
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+
+      <ul class="nav-links" id="nav-menu">
         <li><a href="#home">Início</a></li>
         <li><a href="#visao">A Visão</a></li>
         <li><a href="#experiencia">Experiência</a></li>
@@ -110,12 +123,12 @@
           <h2 id="experiencia-title" class="section-title nl-neon">Interaja com a Luz</h2>
           <p class="section-lead">
             Espaço da experiência visual interativa (partículas e rede neural luminosa).
-            A interação avançada chega na Build 0.6.
+            Base JS na Build 0.6 — efeitos avançados em evolução.
           </p>
         </header>
         <div class="experience-frame" role="img" aria-label="Área da visualização luminosa">
           <p class="experience-placeholder">Visualização da Luz</p>
-          <p class="experience-note">Build 0.5 · base visual pronta · interação na 0.6</p>
+          <p class="experience-note">Build 0.6 · menu mobile ativo · partículas em breve</p>
         </div>
       </div>
     </section>
@@ -205,11 +218,12 @@
     <div class="container footer-inner">
       <p>&copy; 2026 NeuroLumen — A Luz que Revela a Mão Humana.</p>
       <p class="footer-meta">
-        Build 0.5 — CSS + GitHub Pages ·
+        Build 0.6 — JS modular + menu mobile ·
         <a href="https://github.com/producerdcs-cpu/NeuroLumen-A-Luz-que-Revela.">GitHub</a>
       </p>
     </div>
   </footer>
 
+  <script src="js/main.js" defer></script>
 </body>
 </html>
