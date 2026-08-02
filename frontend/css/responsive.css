@@ -1,6 +1,6 @@
 /**
  * NeuroLumen — responsive.css
- * Build 0.6 — menu mobile
+ * Build 0.6.1 — menu mobile sem corte no topo
  */
 
 @media (max-width: 1023px) {
@@ -8,6 +8,10 @@
     display: flex;
   }
 
+  /*
+   * Painel começa abaixo do header inteiro (barra + safe-area).
+   * Antes o topo ficava “comido” pelo header fixo.
+   */
   .nav-links {
     display: none;
     position: fixed;
@@ -17,13 +21,14 @@
     bottom: 0;
     flex-direction: column;
     gap: 0;
-    padding: 1rem 1.25rem 2rem;
-    background: rgba(10, 10, 10, 0.97);
+    padding: 1.25rem 1.25rem calc(2rem + env(safe-area-inset-bottom, 0px));
+    background: rgba(10, 10, 10, 0.98);
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
     border-top: 1px solid var(--nl-border);
     overflow-y: auto;
     z-index: 40;
+    -webkit-overflow-scrolling: touch;
   }
 
   [data-theme="light"] .nav-links {
@@ -38,10 +43,15 @@
     border-bottom: 1px solid var(--nl-border);
   }
 
+  .nav-links li:first-child {
+    border-top: 1px solid var(--nl-border);
+  }
+
   .nav-links a {
     display: block;
-    padding: 1rem 0.25rem;
-    font-size: 1.05rem;
+    padding: 1.15rem 0.5rem;
+    font-size: 1.1rem;
+    font-weight: 500;
     color: var(--nl-text);
   }
 
@@ -52,7 +62,7 @@
 
 @media (max-width: 767px) {
   .hero {
-    padding-top: calc(var(--nl-header-h) + 2rem);
+    padding-top: calc(var(--nl-header-h) + env(safe-area-inset-top, 0px) + 2rem);
   }
 
   .section {
@@ -81,30 +91,37 @@
   }
 }
 
+/* Desktop: menu horizontal sempre visível, sem hamburger */
 @media (min-width: 1024px) {
   .nav-toggle {
-    display: none;
+    display: none !important;
   }
 
   .nav-links {
     display: flex !important;
     position: static;
     flex-direction: row;
-    gap: 1.75rem;
+    align-items: center;
+    gap: 1.5rem;
     padding: 0;
-    background: transparent;
+    background: transparent !important;
     border: none;
     overflow: visible;
+    top: auto;
+    bottom: auto;
+    left: auto;
+    right: auto;
   }
 
   .nav-links li {
-    border: none;
+    border: none !important;
   }
 
   .nav-links a {
     display: inline;
-    padding: 0;
-    font-size: 0.875rem;
+    padding: 0.35rem 0;
+    font-size: 0.9rem;
+    font-weight: 500;
   }
 
   .evidence-grid,
