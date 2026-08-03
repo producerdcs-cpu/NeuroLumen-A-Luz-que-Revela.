@@ -1,6 +1,6 @@
 /**
  * NeuroLumen — main.js
- * Build 0.6 — navegação mobile, interações leves, base para partículas
+ * Build 0.7-A — navegação mobile + interações
  */
 (function () {
   "use strict";
@@ -39,14 +39,12 @@
     if (e.key === "Escape") closeMenu();
   });
 
-  // Fecha ao tocar fora do menu (mobile)
   document.addEventListener("click", function (e) {
     if (!navLinks.classList.contains("is-open")) return;
     if (header && header.contains(e.target)) return;
     closeMenu();
   });
 
-  // Destaque do link da seção visível
   function updateActiveLink() {
     if (!sections.length) return;
     const offset = (header ? header.offsetHeight : 64) + 24;
@@ -82,10 +80,7 @@
 
   updateActiveLink();
 
-  // Base para partículas / canvas (Build 0.6+)
-  // Espaço reservado: document.querySelector(".experience-frame")
-  window.NeuroLumen = window.NeuroLumen || {
-    version: "0.6.0",
-    closeMenu: closeMenu,
-  };
+  window.NeuroLumen = window.NeuroLumen || {};
+  window.NeuroLumen.version = "0.7.0-A";
+  window.NeuroLumen.closeMenu = closeMenu;
 })();
