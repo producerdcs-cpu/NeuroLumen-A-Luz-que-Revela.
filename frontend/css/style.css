@@ -1,6 +1,6 @@
 /**
  * NeuroLumen — style.css
- * Build 0.6.1 — menu acessível
+ * Build 0.6.1 — menu acessível + footer autor
  */
 
 *,
@@ -71,7 +71,6 @@ ul {
   left: 0;
   right: 0;
   z-index: 50;
-  /* altura total = barra + notch */
   min-height: calc(var(--nl-header-h) + env(safe-area-inset-top, 0px));
   padding-top: env(safe-area-inset-top, 0px);
   background: rgba(10, 10, 10, 0.92);
@@ -127,7 +126,6 @@ ul {
   font-size: 1.125rem;
 }
 
-/* Hamburger — sempre fácil de achar */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -432,8 +430,8 @@ ul {
 /* ========== FOOTER ========== */
 .site-footer {
   border-top: 1px solid var(--nl-border);
-  padding: 2.5rem 0;
-  padding-bottom: calc(2.5rem + env(safe-area-inset-bottom, 0));
+  padding: 3rem 0;
+  padding-bottom: calc(3rem + env(safe-area-inset-bottom, 0));
   text-align: center;
   color: var(--nl-text-muted);
   font-size: 0.9rem;
@@ -442,7 +440,32 @@ ul {
 .footer-inner {
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
+  align-items: center;
+  gap: 0.75rem;
+  max-width: 28rem;
+  margin-inline: auto;
+}
+
+.footer-tagline {
+  font-size: clamp(0.95rem, 2.5vw, 1.05rem);
+  font-style: italic;
+  font-weight: 500;
+  color: var(--nl-text-secondary);
+  line-height: 1.5;
+  letter-spacing: 0.01em;
+}
+
+.footer-author {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--nl-primary);
+  letter-spacing: 0.02em;
+}
+
+.footer-meta {
+  font-size: 0.8rem;
+  color: var(--nl-text-muted);
+  margin-top: 0.25rem;
 }
 
 .footer-meta a {
