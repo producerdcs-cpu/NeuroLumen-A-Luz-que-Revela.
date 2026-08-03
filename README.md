@@ -5,27 +5,36 @@
 
 > Plataforma Global de Decodificação Cognitiva da Produção Humana
 
-**Estado:** 🟢 Build 0.7-A online  
-**Versão atual:** `v0.7.0-A` — partículas + rede luminosa  
+**Estado:** 🟢 Build 0.7-B  
+**Versão atual:** `v0.7.0-B` — Next.js (App Router) + partículas  
 **Licença:** MIT
 
 ---
 
-## O que é o NeuroLumen?
+## Ver online
 
-O NeuroLumen **não pretende “ler mentes”**.
-
-Ele reconstrói processos criativos humanos a partir de **evidências observáveis**, classificando cada resultado como fato, inferência, hipótese ou conteúdo criativo.
+```
+https://producerdcs-cpu.github.io/NeuroLumen-A-Luz-que-Revela./
+```
 
 ---
 
-## Ver online (GitHub Pages)
+## Desenvolvimento local (Next.js)
 
-```
-https://producerdcs-cpu.github.io/NeuroLumen-A-Luz-que-Revela./index.html
+```bash
+cd web
+npm install
+npm run dev
 ```
 
-Cada push em `main` atualiza o site (Actions → Deploy GitHub Pages).
+Abra http://localhost:3000
+
+Build estático:
+
+```bash
+cd web && npm run build
+# saída em web/out
+```
 
 ---
 
@@ -33,21 +42,22 @@ Cada push em `main` atualiza o site (Actions → Deploy GitHub Pages).
 
 | Build | Nome | Status |
 |-------|------|--------|
-| 0.1–0.5 | Foundation → CSS + Pages | ✅ |
-| 0.6 | JS modular + menu mobile | ✅ |
-| **0.7-A** | **Partículas + rede luminosa** | ✅ |
-| 0.7-B | React / Next.js | 📋 |
+| 0.1–0.6 | Foundation → menu mobile | ✅ |
+| 0.7-A | Partículas + rede luminosa | ✅ |
+| **0.7-B** | **Next.js App Router** | ✅ |
 | 0.8–1.0 | Backend → IA → Publicação | 📋 |
+
+O site legado HTML puro permanece em `frontend/` (referência). O deploy Pages usa **`web/out`**.
 
 ---
 
 ## Documentação
 
+- [ROADMAP.md](./ROADMAP.md)
 - [MANIFESTO.md](./MANIFESTO.md)
 - [DESIGN_SYSTEM.md](./DESIGN_SYSTEM.md)
-- [ROADMAP.md](./ROADMAP.md)
 
 ---
 
 **NeuroLumen** — A Luz que Revela a Mão Humana.  
-*Build 0.7-A — © Producer DCS®*
+*Build 0.7-B — © Producer DCS®*
